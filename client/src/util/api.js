@@ -1,7 +1,7 @@
 const baseUrl =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:8080/api'
-    : 'https://htdiscuss.herokuapp.com/api';
+    : `https://${window.location.hostname}/api`;
 
 const methods = {
   get: async function (endpoint, token = null) {
